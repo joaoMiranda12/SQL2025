@@ -1,13 +1,6 @@
-varios clientes 
-      |
-      |
-      ↑
-tem várias faturas 
-      ↓
-      |
-      |
-      |
-      ↑
-tem vários produtos 
+Um cliente ------ Tem um fatura
+vários faturas>----<Tem vários produtos 
+cliente------<Tem vários produtos    
+      
 
 
