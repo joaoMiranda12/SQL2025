@@ -1,6 +1,8 @@
 Alunos:
-(id-aluno(pk),nome(Fk),data_nascimento(pk),morada(Fk),curso(Fk));
+(id-aluno(pk),nome(Fk),data_nascimento(pk),morada(),id-curso(Fk));
 Funcionários:
-(id-funcionario(pk),nome(fk), departamento(fk), telefone(fk));
+(id-funcionario(pk),nome(), departamento(), telefone(ck));
 professores:
-(id-professor(pk),Nome(fk), especialidade(fk), telefone(fk),emails(fk),id_funcionario(pk));
+(id-professor(pk),Nome(), especialidade(), telefone(fk),emails(ck),id_funcionario(fk));
+cursos:
+(id-cursos(pk), disciplinas,nome, carga_horario);
