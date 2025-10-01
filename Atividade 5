@@ -1,0 +1,7 @@
+(Fk)Alunos (pk) - nome, endereço, país, idade
+
+(Fk)Professor(pk) -nome, endereço, número, disciplina,filho,idade
+
+(Fk)Cursos(pk)-sala, nome do curso,id curso 
+
+(Fk)Funcionários(pk)-nome,id do funcionário,idade, endereço, número
