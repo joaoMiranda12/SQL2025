@@ -1,4 +1,4 @@
-(Fk)Alunos (pk) - nome, endereço, país, idade
+(Fk)Alunos (pk) - nome, endereço, país, idade,turma
 
 (Fk)Professor(pk) -nome, endereço, número, disciplina,filho,idade
 
