@@ -1,15 +1,29 @@
 Conceptual 
 livros 1 ---- n Utilizadores
-
+Funcionário 1 ---- n Utilizadores
 
 
 
 Lógico 
 
-    |Livros|
-    |
-    |
-PK  |
+    |Livros      |.            |             
+    |Título      |.            |
+    |LivrosID    |.          PK|UtilizadorId
+PK  |autor       |n-----------1|
+    |género      |.          Fk|LivroID
+    |editora     |.            |
+FK  utilizadorID |.            |
+
+    |Funcionários   |.            |             
+    |moradia        |.            |
+    |               |.          PK|FuncionáriosID
+PK  |FuncionarioID  |n-----------1|
+    |               |.          Fk|ulizadoresID
+    |idade          |.            |
+FK  |utilizadoresID | .           |
+
+
+
 
 
 
@@ -22,8 +36,19 @@ PK  |
 Fisico 
 CREATE Table livro{
 título String
+genero String
+editora String
+Autor String
 LivroID int PRIMARY KEY
 UtilizadorID int FOREGEIN KEY
+}
+CREATE Table funcionário{
+Funcionários String
+moradia String
+FuncionáriosId int PRIMARY KEY
+idade int
+Funcionários 
+UtilizadoresID int Forgein KEY
 
 
 }
