@@ -17,7 +17,7 @@ FK  utilizadorID |.            |
     |Funcionários   |.            |             
     |moradia        |.            |
     |               |.          PK|FuncionáriosID
-PK  |FuncionarioID  |n-----------1|
+PK  |FuncionarioID  |1-----------n|
     |               |.          Fk|ulizadoresID
     |idade          |.            |
 FK  |utilizadoresID | .           |
