@@ -1,0 +1,33 @@
+Conceptual 
+livros 1 ---- n Utilizadores
+
+
+
+
+Lógico 
+
+    |Livros|
+    |
+    |
+PK  |
+
+
+
+
+
+
+
+
+
+Fisico 
+CREATE Table livro{
+título String
+LivroID int PRIMARY KEY
+UtilizadorID int FOREGEIN KEY
+
+
+}
+
+
+
+
