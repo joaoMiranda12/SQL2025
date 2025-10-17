@@ -1,0 +1,54 @@
+Conceptual 
+Mãe 1 ---- n médicos 
+bebe 1 ---- n médico 
+bebe n ---- 1 bebe 
+
+
+Lógico 
+
+    |nome        |.              |             
+    |data de nascimento          |.            
+    |nomeID      |.          PK  |nome id
+PK  |peso        |n-----------1. |
+    |altura      |.          Fk. |bebe id
+    |nome da mãe |.              |
+FK  |bebe id    |.               |
+
+    |Funcionários   |.            |             
+    |moradia        |.            |
+    |               |.          PK|FuncionáriosID
+PK  |FuncionarioID  |1-----------n|
+    |               |.          Fk|ulizadoresID
+    |idade          |.            |
+FK  |utilizadoresID | .           |
+
+
+
+
+
+
+
+
+
+
+
+
+Fisico 
+CREATE Table Recem nascido{
+Nome String
+data nascimento int
+nomeID 
+peso int
+nomes String PRIMARY KEYq
+bebeID int FOREGEIN KEY
+}
+CREATE Table funcionário{
+Funcionários String
+moradia String
+FuncionáriosId int PRIMARY KEY
+idade int
+Funcionários 
+UtilizadoresID int Forgein KEY
+
+
+}
