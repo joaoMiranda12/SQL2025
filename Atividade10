@@ -1,26 +1,25 @@
 Conceptual 
 Mãe 1 ---- n médicos 
 bebe 1 ---- n médico 
-bebe n ---- 1 bebe 
+bebe n ---- 1 data de nascimento 
 
 
 Lógico 
 
     |nome        |.              |             
-    |data de nascimento          |.            
+    |data de nascimentoID          |.            
     |nomeID      |.          PK  |nome id
 PK  |peso        |n-----------1. |
     |altura      |.          Fk. |bebe id
-    |nome da mãe |.              |
 FK  |bebe id    |.               |
 
-    |Funcionários   |.            |             
+    |MaeID.         |.            |             
     |moradia        |.            |
-    |               |.          PK|FuncionáriosID
-PK  |FuncionarioID  |1-----------n|
-    |               |.          Fk|ulizadoresID
-    |idade          |.            |
-FK  |utilizadoresID | .           |
+    |               |.          Fk|maeID
+PK  |contacto.       |1-----------n|
+    |especialidade  |             |.          Fk|médicoID
+    |               |.               |
+FK  |bebeID         | .               | 
 
 
 
@@ -42,13 +41,10 @@ peso int
 nomes String PRIMARY KEYq
 bebeID int FOREGEIN KEY
 }
-CREATE Table funcionário{
-Funcionários String
-moradia String
-FuncionáriosId int PRIMARY KEY
-idade int
-Funcionários 
-UtilizadoresID int Forgein KEY
-
-
+CREATE Table mae{
+maeID int
+moradia string
+conctato int
+especialidade string
+bebeID int
 }
