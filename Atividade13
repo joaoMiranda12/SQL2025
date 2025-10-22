@@ -1,0 +1,11 @@
+CREATE DATABASE Londres;
+Use Londres;
+
+CREATE TABLE cidades(
+CdadesID INT PRIMARY KEY,
+Nome_cidade VARCHAR(100) NOT NULL,
+Codigo_Postal INT NULL
+);
+
+SELECT * FROM Cidade;
+SELECT CidadeID FROM  Cidades;
