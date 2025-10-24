@@ -1,0 +1,21 @@
+CREATE DATABASE canada;
+Use canada;
+
+CREATE TABLE cidades(
+CidadeID INT PRIMARY KEY,
+Nome_cidade VARCHAR(100) NOT NULL,
+Codigo_Postal INT NULL
+);
+
+SELECT * FROM Cidades;
+SELECT CidadeID FROM  Cidades;
+
+INSERT INTO cidades (cidadeId ,nome_cidade,codigo_postal)
+VALUES(1,"Jaimaica",405589),
+	  (2,"Maljoga",4055678);
+      
+
+
+
+
+
