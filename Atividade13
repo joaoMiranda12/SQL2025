@@ -1,5 +1,5 @@
-CREATE DATABASE Londres;
-Use Londres;
+CREATE DATABASE canada;
+Use canada;
 
 CREATE TABLE cidades(
 CdadesID INT PRIMARY KEY,
