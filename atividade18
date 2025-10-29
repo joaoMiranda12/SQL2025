@@ -26,9 +26,22 @@ CREATE TABLE armazem (
     SELECT cod_prod,valor_unit
     FROM protudos 
     WHERE desconto IS NULL;
-    
+
+	UPDATE protudos 
+	SET desconto=0
+	WHERE = deconto IS NULL;
+
+
     SELECT produtosID,quantidade
     FROM produtos
-    WHERE desconto <10 AND desconto > 20;
+    WHERE desconto > 10 AND desconto < 20;
+
+
+	SELECT quantidade,valor_unit
+	FROM produtos
+	WHERE cod_prod=2;
     
     SET SQL_SAFE_UPDATES= 0;
+
+
+
